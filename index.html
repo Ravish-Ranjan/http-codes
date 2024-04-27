@@ -19,7 +19,7 @@
 					<li>
 						<p>Construct a URL using the following format:</p>
 						<code class="code"
-							>https://ravish-ranjan.github.io/http-codes/{status_code}.jpeg</code
+							>https://ravish-ranjan.github.io/http-codes/img/{status_code}.jpeg</code
 						>
 						<p>
 							Replace <span class="code">{status_code}</span> with
@@ -60,7 +60,7 @@
 					if (statusCode.trim() === "") {
 						alert("Please enter a valid status code.");
 					} else {
-						var apiUrl = `https://ravish-ranjan.github.io/http-codes/${statusCode}.jpeg`;
+						var apiUrl = `https://ravish-ranjan.github.io/http-codes/img/${statusCode}.jpeg`;
 						window.open(apiUrl);
 					}
 				});
