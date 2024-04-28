@@ -22,9 +22,9 @@
 + 307 temporary redirect
 + 308 permanent redirect
 + 400 bad request
-- 401 unauthorized
-- 402 payment required
-- 403 forbidden
++ 401 unauthorized
++ 402 payment required
++ 403 forbidden
 - 404 not found
 - 405 method not allowed
 - 406 not acceptable
