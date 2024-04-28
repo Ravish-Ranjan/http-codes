@@ -1,45 +1,79 @@
+:root{
+	--col1:#fff;
+	--col2:#f0f0f0;
+	---col3:#ccc;
+}
 body {
-	font-family: Arial, sans-serif;
 	margin: 0;
 	padding: 0;
+	background-color: var(--col2);
+	font-family: "Roboto", sans-serif;
 }
+
 .container {
-	max-width: 800px;
-	margin: 0 auto;
-	padding: 20px;
+	max-width: 600px;
+	margin: 50px auto;
+	background-color: var(--col1);
+	padding: 30px;
+	border-radius: 10px;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
-.instructions {
-	background-color: #ddd;
-	padding: 20px;
-	border-radius: 5px;
-	margin-bottom: 20px;
+
+h1,
+h2 {
+	margin-top: 0;
+	color: #333;
 }
+
+.instructions ol {
+	margin-top: 0;
+	padding-left: 20px;
+}
+
+.instructions ol li {
+	margin-bottom: 15px;
+}
+
 .code {
-	background-color: #eee;
-	padding: 5px;
-	border-radius: 3px;
-}
-.form {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin-top: 20px;
-}
-.form input {
-	width: 70%;
-	padding: 10px;
-	border: 1px solid #888;
+	background-color: var(--col2);
+	padding: 5px 10px;
 	border-radius: 5px;
+	font-family: monospace;
 }
-.form button {
-	width: 25%;
+
+.form {
+	margin-top: 20px;
+	text-align: center;
+}
+
+input[type="text"] {
 	padding: 10px;
-	border: none;
+	width: calc(100% - 120px);
+	border-radius: 5px;
+	border: 1px solid var(---col3);
+	margin-right: 10px;
+}
+
+#getImage {
+	padding: 10px 20px;
 	background-color: #007bff;
-	color: #fff;
+	border: none;
+	color: var(--col1);
 	border-radius: 5px;
 	cursor: pointer;
+	transition: background-color 0.3s ease;
 }
-.form button:hover {
+
+#getImage:hover {
 	background-color: #0056b3;
+}
+@media screen and (prefers-color-scheme:dark) {
+	:root{
+		--col1:#393e47;
+		--col2:#23272e;
+		--col3:#2f3338;
+	}
+	h1,h2,h3,h4,h5,body{
+		color: #ddd;
+	}
 }
